@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Meu Portifólio</title>
+</head>
+<body class="bg-dark text-light">
+    <header class ="bg-black">
+       <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light" href="#">Bruna Baria</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>  
+          <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-light" aria-current="page" href="#sobre">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#habilidades">Habilidades</a>
+              </li>
+              <li class = 'nav-item'> 
+                <a class="nav-link text-light" href="#projetos">Projetos</a>
+            </li>
+            <li class = 'nav-item'>
+                <a class = 'nav-link text-light' href="#contato">Contatos</a>
+            </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="d-lg-flex align-items-center justify-content-center text-sm-center text-center text-lg-start" id="sobre">
+        <div>
+            <h2>Bruna Baria</h2>
+            <p>Desenvolvedora web</p>
+        </div>
+        <div>
+            <img src="./imagem/desenvolvedora.png" alt="Uma mulher sentada no chão, vestindo uma blusa amarela escrevendo em um notebook" class="img-fluid" >
+        </div>
+       
+    </section>
+    <section class="text-center mx-auto px-5 w-50 my-5"  >
+        <h2>Sobre mim</h2>
+        <p>Graduada em Administração, cursando Análise e Desenvolvimento de Sistemas e pós-graduação TechJourney na FIAP, com experiência em gestão e buscando desafios na área de desenvolvimento de sistemas. Este site-portifólio é meu primeiro desenvolvimento em HTML, CSS e bootstrap.</p>
+    </section>
+    <section class="text-center mx-auto  w-50 my-5" >
+        <h2 id="habilidades">Habilidades</h2>
+        <ul class="row list-unstyled">
+            <li class="col">
+                <img src="./imagem/Logo HTML.png" alt="logo HTML" class="mt-2">
+                <h3 class="mt-2">HTML</h3>
+            </li>    
+            <li class="col">
+                <img src="./imagem/Logo CSS.png" alt="logo CSS">
+                <h3 >CSS</h3>
+            </li>    
+            <li class="col">
+                <img src="./imagem/Logo Javascript.png" alt="logo JS">
+                <h3>JavaScript</h3>
+            </li>
+            <li class="col" >
+                <img src="./imagem/c-sharp.png" alt="logo csharp" class="w-100  text-center mx-auto mt-1">
+                <h3 class="mt-4">C#</h3>
+            </li>
+        </ul>
+
+    </section>
+    <section class="w-75 mx-auto my-5">
+        <h2 class="text-center" id="projetos">Projetos</h2>
+        <Table border="1" rules="all" cellpadding="10" class="table table-hover table-bordered table-responsive" >
+            <thead>
+                <tr align="left" class="table-dark">
+                    <th >Projeto</th>
+                    <th >Descrição</th>
+                    <th >Tecnologias</th>
+                </tr>
+            </thead>
+            <tbody class="bg-light text-black p-3">
+                <tr>
+                    <td>Adivinhe o Número Secreto</td>
+                    <td>Tente adivinhar qual número a máquina escolheu</td>
+                    <td>JavaScript, HTML e CSS</td>
+                </tr>
+                <tr>
+                    <td>Game JoKenPo</td>
+                    <td>Escolha uma opção entre pedra, papel e tesoura nesse clássico game e veja se você tem sorte jogando contra a máquina</td>
+                    <td>JavaScript, HTML e CSS</td>
+                </tr>
+                <tr>
+                    <td>Portifólio</td>
+                    <td>Página de portifólio padrão desenvolvida em aula para publicação de habilidade</td>
+                    <td>HTML e CSS</td>
+                </tr>
+            </tbody>
+        </Table>
+</section>        
+<section class="w-50 mx-auto">
+    <h2 class="text-center" id="contato">Contato</h2>
+    <div class="row">
+        <div class="col-lg">
+            <form action="">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" name="nome" id="nome" required minlength="2" class="form-control" >
+    
+                <label for="assunto">Assunto</label>
+                <input type="text" name="assunto" id="assunto" required minlength="2" class="form-control">
+    
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="teste@email.com" required minlength="5" class="form-control">
+    
+                <label for="msg">Mensagem</label>
+                <textarea name="msg" id="msg" cols="30" rows="5" placeholder="Escreva uma mensagem" required minlength="5" maxlength="280" class="form-control"></textarea>
+    
+                <input type="submit" value="Enviar" class="btn btn-primary mt-3">
+            </form>
+        </div>
+        <div class="col">
+            <div >
+                <ul>
+                    <li class="row align-items-center gap-3">
+                        <div class="col-1">
+                            <img src="./imagem/email.png" alt="ícone de envelope" >
+                        </div>
+                        <div class="col">
+                            <p>Contate-me via e-mail</p>
+                            <p>brunabaria.m@gmail.com</p>
+                        </div> 
+                       
+                    </li>
+                    <li class="row align-items-center gap-3">
+                        <div class="col-1">
+                            <img src="./imagem/tel.png" alt="ícone de telefone" >
+                        </div>
+                        <div class="col">
+                            <p>Contate-me via telefone</p>
+                            <p>(11) 94265-4984</p>
+                        </div>
+                    
+                    </li>
+                    <li class="row align-items-center gap-3">
+                        <div class="col-1">
+                            <img src="./imagem/pin.png" alt="ícone de pin">
+                        </div>
+                        <div class="col">
+                            <p>Endereço Comercial</p>
+                            <p>Rua Fictícia, 152</p>
+                            <p>São Paulo - SP</p>
+                        </div>
+                    
+                    </li>
+                </ul>
+                </div> 
+        </div>
+        
+    </div>
+</section>
+    </div>
+    <footer class="bg-black d-lg-flex justify-content-around text-center mt-5 p-3">
+        <p>
+            2023 @ Desenvolvido por Bruna Baria | Projeto fictício sem fins comerciais
+        </p>
+        <ul class="d-flex justify-content-center list-unstyled gap-2">
+            
+            <li>
+                <a href="https://github.com/BrunaBaria">
+                <i class="fa-brands fa-github fa-2xl" style="color: #ffffff;"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/bruna-baria/">
+                <i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i>
+                </a>   
+            </li>
+        </ul>
+    </footer>
+    <script src="https://kit.fontawesome.com/cb055360d0.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
